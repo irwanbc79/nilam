@@ -8,3 +8,5 @@ Thumbs.db
 # Original design export — kept locally, not versioned
 extracted/
 *.zip
+newassets/
+nilam/
