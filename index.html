@@ -208,8 +208,14 @@
   .why-grid p{font-size:12.8px;color:#a9bb9c;margin:0;}
 
   /* contact */
-  #contact{background:radial-gradient(120% 100% at 20% 0%,rgba(94,124,84,.18),rgba(244,241,233,0) 60%),var(--cream);}
-  .contact-card{background:var(--paper);border:1px solid rgba(47,74,53,.1);border-radius:18px;padding:34px;box-shadow:0 30px 60px -36px rgba(35,58,41,.45);}
+  #contact{position:relative;overflow:hidden;background:#1c2717;}
+  .contact-bg{position:absolute;inset:0;background-image:url('assets/img/contact-bg.jpg');background-size:cover;background-position:center 26%;}
+  .contact-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(12,19,11,.74) 0%,rgba(14,22,13,.5) 40%,rgba(16,25,15,.36) 100%),linear-gradient(180deg,rgba(15,23,14,0) 38%,rgba(12,19,11,.52) 100%);}
+  #contact .body-2{text-shadow:0 1px 14px rgba(0,0,0,.55);}
+  #contact .two-col{position:relative;z-index:2;}
+  #contact .head{color:#f6f3ea;text-shadow:0 2px 26px rgba(0,0,0,.45);}
+  #contact .body-2{color:#c9d6bd;}
+  .contact-card{background:rgba(251,250,244,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5);border-radius:18px;padding:34px;box-shadow:0 44px 80px -28px rgba(0,0,0,.7);}
   .contact-card .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-2);font-weight:700;margin-bottom:18px;}
   .c-wa{display:flex;align-items:center;gap:13px;background:var(--green);color:#f1efe6;font-weight:600;font-size:15px;padding:16px 22px;border-radius:11px;margin-bottom:14px;box-shadow:0 16px 30px -16px rgba(35,58,41,.7);transition:transform .3s;}
   .c-wa:hover{transform:translateY(-2px);}
@@ -550,9 +556,12 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="pad" style="scroll-margin-top:84px;">
+<section id="contact" class="pad" style="scroll-margin-top:84px;padding-top:124px;padding-bottom:128px;">
+  <div class="contact-bg" role="img" aria-label="Hutan tropis Aceh Jaya berselimut kabut saat matahari terbit"></div>
+  <div class="contact-overlay"></div>
   <div class="two-col">
     <div class="reveal">
+      <div class="kicker" style="margin-bottom:18px;"><span class="t" style="color:var(--sage-3);"><span data-id>Kontak</span><span data-en>Contact</span></span><span class="line" style="background:rgba(255,255,255,.3);"></span></div>
       <h2 class="head" style="font-size:clamp(36px,4.4vw,60px);margin-bottom:18px;"><span data-id>Aroma Terbaik Selalu Berawal dari Asal yang Sejati.</span><span data-en>The Finest Aroma Always Begins with a True Origin.</span></h2>
       <p class="body-2" style="max-width:480px;margin:0;"><span data-id>Mari bekerja sama dan wujudkan produk luar biasa bersama minyak nilam terbaik dari Aceh Jaya.</span><span data-en>Let's work together and create extraordinary products with the finest patchouli oil from Aceh Jaya.</span></p>
     </div>
@@ -580,7 +589,7 @@
       <img src="assets/img/logo-mark.png" alt="" width="40" height="44" style="height:44px;width:auto;display:block;" aria-hidden="true">
       <span style="line-height:1.1;"><span style="display:block;font-weight:700;letter-spacing:.04em;font-size:15px;color:#eef2e8;">INDOESSENTIALOIL</span><span style="display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#8aa07c;font-weight:600;">Aceh Jaya Patchouli Oil</span></span>
     </div>
-    <div style="font-size:12.5px;color:#8aa07c;text-align:center;"><span data-id>© 2026 Indoessentialoil. Semua Hak Dilindungi.</span><span data-en>© 2026 Indoessentialoil. All Rights Reserved.</span><span style="display:block;margin-top:3px;">indoessentialoil.com · Aceh Jaya, Indonesia</span></div>
+    <div style="font-size:12.5px;color:#8aa07c;text-align:center;"><span data-id>© 2026 Indoessentialoil. Semua Hak Dilindungi.</span><span data-en>© 2026 Indoessentialoil. All Rights Reserved.</span><span style="display:block;margin-top:3px;">indoessentialoil.com · Aceh Jaya, Indonesia</span><span style="display:block;margin-top:7px;font-size:11.5px;color:#6f8a60;">Powered by <a href="https://morabangun.com" target="_blank" rel="noopener" style="color:#aebfa1;font-weight:700;border-bottom:1px solid rgba(174,191,161,.4);">morabangun.com</a></span></div>
     <div class="soc">
       <div style="display:flex;gap:12px;">
         <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#cdd9c3" stroke-width="1.5"/><circle cx="12" cy="12" r="3.6" stroke="#cdd9c3" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="#cdd9c3"/></svg></a>
