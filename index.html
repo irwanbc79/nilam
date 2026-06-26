@@ -18,7 +18,8 @@
 <meta property="og:image" content="https://indoessentialoil.com/assets/img/hero-bottle.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232f4a35'/%3E%3Cpath d='M12 20V7.4' stroke='%23cdd9c3' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M12 7.4c1.8.6 2.7 2.1 2.5 3.9-1.8-.2-2.8-1.6-2.5-3.9Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 7.4c-1.8.6-2.7 2.1-2.5 3.9 1.8-.2 2.8-1.6 2.5-3.9Z' fill='%239bb38c'/%3E%3Cpath d='M12 11.2c2.2.6 3.3 2.2 3.1 4.2-2.2-.1-3.4-1.8-3.1-4.2Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 11.2c-2.2.6-3.3 2.2-3.1 4.2 2.2-.1 3.4-1.8 3.1-4.2Z' fill='%239bb38c'/%3E%3Cpath d='M12 15.3c2.5.7 3.8 2.5 3.6 4.6-2.5-.1-3.9-2-3.6-4.6Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 15.3c-2.5.7-3.8 2.5-3.6 4.6 2.5-.1 3.9-2 3.6-4.6Z' fill='%239bb38c'/%3E%3Ccircle cx='12' cy='6.3' r='1' fill='%23e8d9a8'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,7 +87,8 @@
   header.scrolled{box-shadow:0 10px 30px -20px rgba(35,58,41,.5);background:rgba(244,241,233,.94);}
   .hd-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 28px;max-width:var(--max);margin:0 auto;}
   .brand{display:flex;align-items:center;gap:11px;}
-  .brand .mark{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .brand .mark{height:46px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .brand .mark img{height:46px;width:auto;display:block;}
   .brand .name{display:block;font-weight:700;letter-spacing:.04em;font-size:16px;color:var(--green-deep);}
   .brand .sub{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-2);font-weight:600;}
   nav.main{display:flex;align-items:center;gap:26px;font-size:13.5px;font-weight:600;color:#3c4438;}
@@ -165,7 +167,7 @@
   .step p{font-size:12.8px;color:#646b58;margin:0;}
 
   /* product */
-  .prod-right{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;}
+  .prod-right{display:flex;flex-direction:column;gap:24px;}
   .stat{flex:1;min-width:120px;background:var(--paper);border:1px solid rgba(47,74,53,.1);border-radius:12px;padding:16px;}
   .stat .n{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--green);font-weight:600;}
   .stat .l{font-size:12px;color:var(--text-muted);margin-top:2px;}
@@ -261,16 +263,7 @@
   <div class="hd-inner">
     <a href="#home" class="brand" aria-label="IndoEssentialOil home">
       <span class="mark">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 21V7.4" stroke="#cdd9c3" stroke-width="1" stroke-linecap="round"/>
-          <path d="M12 7.4c1.8.6 2.7 2.1 2.5 3.9-1.8-.2-2.8-1.6-2.5-3.9Z" fill="#cdd9c3"/>
-          <path d="M12 7.4c-1.8.6-2.7 2.1-2.5 3.9 1.8-.2 2.8-1.6 2.5-3.9Z" fill="#9bb38c"/>
-          <path d="M12 11.2c2.2.6 3.3 2.2 3.1 4.2-2.2-.1-3.4-1.8-3.1-4.2Z" fill="#cdd9c3"/>
-          <path d="M12 11.2c-2.2.6-3.3 2.2-3.1 4.2 2.2-.1 3.4-1.8 3.1-4.2Z" fill="#9bb38c"/>
-          <path d="M12 15.3c2.5.7 3.8 2.5 3.6 4.7-2.5-.1-3.9-2-3.6-4.7Z" fill="#cdd9c3"/>
-          <path d="M12 15.3c-2.5.7-3.8 2.5-3.6 4.7 2.5-.1 3.9-2 3.6-4.7Z" fill="#9bb38c"/>
-          <circle cx="12" cy="6.4" r="1.1" fill="#e8d9a8"/>
-        </svg>
+        <img src="assets/img/logo-mark.png" alt="" width="42" height="46" aria-hidden="true">
       </span>
       <span style="line-height:1.05;">
         <span class="name">INDOESSENTIALOIL</span>
@@ -442,8 +435,8 @@
       </a>
     </div>
     <div class="prod-right reveal">
-      <div class="art-frame" style="width:190px;height:264px;">
-        <img src="assets/img/oil-shelf.jpg" alt="Koleksi sampel minyak nilam dari berbagai daerah penghasil di Aceh Jaya" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="900" height="1600">
+      <div class="art-frame" style="width:100%;aspect-ratio:3/2;">
+        <img src="assets/img/product-dropper.jpg" alt="Tetesan minyak nilam murni dari pipet ke botol amber, dikelilingi daun nilam segar" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="1536" height="1024">
       </div>
       <div class="spec-card">
         <div class="lbl"><span data-id>Otentik dari Sumbernya</span><span data-en>Authentic from Source</span></div>
@@ -490,6 +483,11 @@
         <img src="assets/img/oil-weighing.jpg" alt="Penimbangan minyak nilam untuk kontrol mutu" loading="lazy">
         <div class="shade" style="background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(12,20,13,.7));"></div>
         <div class="cap" style="left:14px;bottom:12px;"><div class="t" style="font-size:13.5px;"><span data-id>Penimbangan &amp; Mutu</span><span data-en>Weighing &amp; QC</span></div></div>
+      </div>
+      <div class="tile" data-type="image" data-src="assets/img/oil-shelf.jpg" data-cid="Koleksi sampel minyak nilam per daerah" data-cen="Patchouli oil sample collection by region">
+        <img src="assets/img/oil-shelf.jpg" alt="Rak koleksi sampel minyak nilam dari berbagai daerah" loading="lazy">
+        <div class="shade" style="background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(12,20,13,.7));"></div>
+        <div class="cap" style="left:14px;bottom:12px;"><div class="t" style="font-size:13.5px;"><span data-id>Koleksi Sampel</span><span data-en>Sample Collection</span></div></div>
       </div>
       <div class="tile" data-type="video" data-src="assets/video/prod-05.mp4" data-cid="Dokumentasi produksi" data-cen="Production documentation">
         <video src="assets/video/prod-05.mp4#t=0.6" preload="metadata" muted playsinline></video>
@@ -573,7 +571,7 @@
 <footer>
   <div class="foot-inner">
     <div style="display:flex;align-items:center;gap:11px;">
-      <span style="width:36px;height:36px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21V7.4" stroke="#9bb38c" stroke-width="1" stroke-linecap="round"/><path d="M12 7.4c1.8.6 2.7 2.1 2.5 3.9-1.8-.2-2.8-1.6-2.5-3.9Z" fill="#9bb38c"/><path d="M12 7.4c-1.8.6-2.7 2.1-2.5 3.9 1.8-.2 2.8-1.6 2.5-3.9Z" fill="#6f8a60"/><path d="M12 11.2c2.2.6 3.3 2.2 3.1 4.2-2.2-.1-3.4-1.8-3.1-4.2Z" fill="#9bb38c"/><path d="M12 11.2c-2.2.6-3.3 2.2-3.1 4.2 2.2-.1 3.4-1.8 3.1-4.2Z" fill="#6f8a60"/><path d="M12 15.3c2.5.7 3.8 2.5 3.6 4.7-2.5-.1-3.9-2-3.6-4.7Z" fill="#9bb38c"/><path d="M12 15.3c-2.5.7-3.8 2.5-3.6 4.7 2.5-.1 3.9-2 3.6-4.7Z" fill="#6f8a60"/><circle cx="12" cy="6.4" r="1.1" fill="#b9c19a"/></svg></span>
+      <img src="assets/img/logo-mark.png" alt="" width="40" height="44" style="height:44px;width:auto;display:block;" aria-hidden="true">
       <span style="line-height:1.1;"><span style="display:block;font-weight:700;letter-spacing:.04em;font-size:15px;color:#eef2e8;">INDOESSENTIALOIL</span><span style="display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#8aa07c;font-weight:600;">Aceh Jaya Patchouli Oil</span></span>
     </div>
     <div style="font-size:12.5px;color:#8aa07c;text-align:center;"><span data-id>© 2026 Indoessentialoil. Semua Hak Dilindungi.</span><span data-en>© 2026 Indoessentialoil. All Rights Reserved.</span><span style="display:block;margin-top:3px;">indoessentialoil.com · Aceh Jaya, Indonesia</span></div>
