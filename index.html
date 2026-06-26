@@ -328,10 +328,7 @@
     </div>
     <div class="hero-media reveal">
       <div class="hero-frame">
-        <img src="assets/img/drums-outdoor.jpg" alt="Drum minyak nilam Aceh Jaya siap kirim" width="1600" height="924">
-        <div class="play" data-type="video" data-src="assets/video/prod-04.mp4" data-cid="Dokumentasi produksi nilam Aceh Jaya" data-cen="Aceh Jaya patchouli production" role="button" tabindex="0" aria-label="Play video">
-          <span class="play-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="#26331f"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
+        <iframe src="https://www.youtube-nocookie.com/embed/veoV5tvpBM0?rel=0&modestbranding=1&color=white" title="Permata Alam Aceh Jaya — IndoEssentialOil" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>
       </div>
       <div class="badge-100">
         <span class="n">100%</span>
@@ -529,6 +526,12 @@
         <span class="vbadge"><svg width="14" height="14" viewBox="0 0 24 24" fill="#26331f"><path d="M8 5v14l11-7z"/></svg></span>
         <span class="vtag">Video</span>
       </div>
+      <div class="tile" data-type="video" data-src="assets/video/prod-04.mp4" data-cid="Penanganan drum produksi" data-cen="Handling production drums">
+        <video src="assets/video/prod-04.mp4#t=0.6" preload="metadata" muted playsinline></video>
+        <div class="shade" style="background:rgba(12,20,13,.18);"></div>
+        <span class="vbadge"><svg width="14" height="14" viewBox="0 0 24 24" fill="#26331f"><path d="M8 5v14l11-7z"/></svg></span>
+        <span class="vtag">Video</span>
+      </div>
     </div>
   </div>
 </section>
@@ -714,7 +717,7 @@
     lb.classList.remove("open"); lb.setAttribute("aria-hidden","true");
     lbInner.innerHTML = ""; document.body.style.overflow = "";
   }
-  document.querySelectorAll(".tile, .hero-frame .play").forEach(function(el){
+  document.querySelectorAll(".tile").forEach(function(el){
     function trigger(){ openLB(el.getAttribute("data-type"), el.getAttribute("data-src"), el.getAttribute("data-cid"), el.getAttribute("data-cen")); }
     el.addEventListener("click", trigger);
     el.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); trigger(); } });
