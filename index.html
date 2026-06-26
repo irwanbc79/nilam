@@ -15,7 +15,7 @@
 <meta property="og:title" content="IndoEssentialOil — Premium Patchouli Oil from Aceh Jaya">
 <meta property="og:description" content="100% pure patchouli (nilam) oil, traditionally crafted in the untouched highlands of Aceh Jaya, Indonesia.">
 <meta property="og:url" content="https://indoessentialoil.com/">
-<meta property="og:image" content="https://indoessentialoil.com/assets/img/drums-outdoor.jpg">
+<meta property="og:image" content="https://indoessentialoil.com/assets/img/hero-bottle.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232f4a35'/%3E%3Cpath d='M12 20V7.4' stroke='%23cdd9c3' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M12 7.4c1.8.6 2.7 2.1 2.5 3.9-1.8-.2-2.8-1.6-2.5-3.9Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 7.4c-1.8.6-2.7 2.1-2.5 3.9 1.8-.2 2.8-1.6 2.5-3.9Z' fill='%239bb38c'/%3E%3Cpath d='M12 11.2c2.2.6 3.3 2.2 3.1 4.2-2.2-.1-3.4-1.8-3.1-4.2Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 11.2c-2.2.6-3.3 2.2-3.1 4.2 2.2-.1 3.4-1.8 3.1-4.2Z' fill='%239bb38c'/%3E%3Cpath d='M12 15.3c2.5.7 3.8 2.5 3.6 4.6-2.5-.1-3.9-2-3.6-4.6Z' fill='%23cdd9c3'/%3E%3Cpath d='M12 15.3c-2.5.7-3.8 2.5-3.6 4.6 2.5-.1 3.9-2 3.6-4.6Z' fill='%239bb38c'/%3E%3Ccircle cx='12' cy='6.3' r='1' fill='%23e8d9a8'/%3E%3C/svg%3E">
@@ -113,28 +113,25 @@
   .scrim{position:fixed;inset:0;background:rgba(28,39,23,.45);z-index:70;opacity:0;pointer-events:none;transition:opacity .4s;backdrop-filter:blur(2px);}
   body.menu-open .scrim{opacity:1;pointer-events:auto;}
 
-  /* hero */
-  #home{position:relative;padding:62px 28px 30px;background:radial-gradient(130% 90% at 72% -10%,rgba(94,124,84,.20),rgba(244,241,233,0) 58%),linear-gradient(180deg,#f6f3ec,#eef0e6);}
-  .hero-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:52px;align-items:center;}
-  .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 15px;border:1px solid rgba(47,74,53,.22);border-radius:100px;margin-bottom:26px;background:rgba(255,255,255,.45);}
+  /* hero — full-bleed photo */
+  #home{position:relative;background:#1c2717;overflow:hidden;}
+  .hero-photo{position:absolute;inset:0;background-image:url('assets/img/hero-bottle.jpg');background-size:cover;background-position:74% center;}
+  .hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(244,241,233,.96) 0%,rgba(244,241,233,.85) 22%,rgba(244,241,233,.5) 42%,rgba(244,241,233,.12) 60%,rgba(244,241,233,0) 76%),linear-gradient(0deg,rgba(244,241,233,.65) 0%,rgba(244,241,233,0) 26%);}
+  .hero-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:120px 28px 132px;min-height:92vh;display:flex;align-items:center;}
+  .hero-copy{max-width:560px;}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 15px;border:1px solid rgba(47,74,53,.28);border-radius:100px;margin-bottom:26px;background:rgba(255,255,255,.55);}
   .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 0 rgba(94,124,84,.5);animation:pulse 2.6s infinite;}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(94,124,84,.5);}70%{box-shadow:0 0 0 9px rgba(94,124,84,0);}100%{box-shadow:0 0 0 0 rgba(94,124,84,0);}}
-  .eyebrow span.t{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:#4a6043;}
-  h1.title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,5vw,72px);line-height:1.04;letter-spacing:-.01em;color:var(--green-deep);margin:0 0 22px;}
-  .lede{font-size:16px;color:var(--text-soft);max-width:520px;margin:0 0 16px;}
+  .eyebrow span.t{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#3f5638;}
+  h1.title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,5.2vw,74px);line-height:1.03;letter-spacing:-.01em;color:var(--green-deep);margin:0 0 22px;text-shadow:0 1px 18px rgba(244,241,233,.5);}
+  .lede{font-size:16px;color:#3a4634;max-width:500px;margin:0 0 16px;font-weight:500;}
   .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;}
-  .hero-media{position:relative;}
-  .hero-frame{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 40px 70px -26px rgba(35,58,41,.55);border:1px solid rgba(47,74,53,.12);aspect-ratio:16/9;background:#0c140d;}
-  .hero-frame img{width:100%;height:100%;object-fit:cover;}
-  .hero-frame .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;background:linear-gradient(180deg,rgba(12,20,13,.05),rgba(12,20,13,.42));}
-  .play-btn{width:74px;height:74px;border-radius:50%;background:rgba(244,241,233,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 34px -10px rgba(0,0,0,.5);transition:transform .35s;}
-  .hero-frame .play:hover .play-btn{transform:scale(1.08);}
-  .badge-100{position:absolute;bottom:-22px;left:-22px;width:96px;height:96px;border-radius:50%;background:var(--green);color:#e7ecdf;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 38px -14px rgba(35,58,41,.8);border:3px solid var(--cream);}
-  .badge-100 .n{font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1;font-weight:600;}
-  .badge-100 .l{font-size:8px;letter-spacing:.14em;text-transform:uppercase;margin-top:3px;color:var(--sage-3);text-align:center;}
+  .hero-scroll{position:absolute;left:50%;bottom:118px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:7px;color:#3f5638;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.8;}
+  .hero-scroll svg{animation:bob 1.8s ease-in-out infinite;}
+  @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(5px);}}
 
   /* trust bar */
-  .trust{max-width:var(--max);margin:46px auto 0;background:var(--paper);border:1px solid rgba(47,74,53,.1);border-radius:16px;box-shadow:0 24px 50px -34px rgba(35,58,41,.4);padding:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+  .trust{max-width:var(--max);margin:-66px auto 0;position:relative;z-index:3;background:rgba(251,250,244,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(47,74,53,.12);border-radius:16px;box-shadow:0 34px 64px -34px rgba(28,39,23,.6);padding:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
   .trust .cell{padding:24px 26px;display:flex;gap:15px;border-right:1px solid rgba(47,74,53,.09);}
   .trust .cell:last-child{border-right:0;}
   .trust .ic{flex:0 0 auto;width:42px;height:42px;border-radius:50%;border:1px solid rgba(47,74,53,.22);display:flex;align-items:center;justify-content:center;color:#4a6043;}
@@ -235,6 +232,10 @@
   .lb-inner video{background:#000;}
   .lb-cap{color:#dfe6d6;font-size:14px;text-align:center;}
 
+  /* reusable 16:9 video frame */
+  .video-frame{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 44px 80px -30px rgba(0,0,0,.7);border:1px solid rgba(255,255,255,.12);aspect-ratio:16/9;background:#0c140d;}
+  .video-frame iframe{width:100%;height:100%;border:0;display:block;}
+
   @media (max-width:880px){
     nav.main,.hd-cta{display:none;}
     .burger{display:flex;}
@@ -242,6 +243,13 @@
     .quote-card{position:static;margin-top:18px;max-width:none;}
     .prod-right{grid-template-columns:1fr;}
     .prod-right .art-frame{max-width:240px;margin:0 auto;}
+  }
+  @media (max-width:760px){
+    .hero-photo{background-position:72% top;}
+    .hero-veil{background:linear-gradient(180deg,rgba(244,241,233,.42) 0%,rgba(244,241,233,.82) 52%,rgba(244,241,233,.96) 100%);}
+    .hero-inner{min-height:auto;padding:100px 24px 120px;align-items:flex-end;}
+    .hero-scroll{display:none;}
+    .trust{margin-top:-48px;}
   }
 </style>
 </head>
@@ -301,8 +309,10 @@
 
 <!-- HERO -->
 <section id="home">
-  <div class="hero-grid">
-    <div class="reveal">
+  <div class="hero-photo" role="img" aria-label="Botol minyak nilam IndoEssentialOil di atas batu dengan latar pegunungan tropis Aceh Jaya saat matahari terbit"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <div class="hero-copy reveal in">
       <div class="eyebrow">
         <span class="dot"></span>
         <span class="t"><span data-id>Nilam Premium dari Aceh Jaya</span><span data-en>Premium Patchouli from Aceh Jaya</span></span>
@@ -326,16 +336,11 @@
         </a>
       </div>
     </div>
-    <div class="hero-media reveal">
-      <div class="hero-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/veoV5tvpBM0?rel=0&modestbranding=1&color=white" title="Permata Alam Aceh Jaya — IndoEssentialOil" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>
-      </div>
-      <div class="badge-100">
-        <span class="n">100%</span>
-        <span class="l"><span data-id>Murni &amp; Alami</span><span data-en>Pure &amp; Natural</span></span>
-      </div>
-    </div>
   </div>
+  <a href="#about" class="hero-scroll" aria-label="Scroll ke bawah">
+    <span><span data-id>Gulir</span><span data-en>Scroll</span></span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
 
   <div class="trust reveal">
     <div class="cell">
@@ -387,6 +392,22 @@
         <svg width="26" height="26" viewBox="0 0 24 24" fill="#7d9670" style="margin-bottom:8px;"><path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6c0-1.7 1.3-3 3-3V7Zm11 0h-4a3 3 0 0 0-3 3v7h7v-7h-4c0-1.7 1.3-3 3-3V7Z"/></svg>
         <p><span data-id>Alam tidak terburu-buru, dan begitu juga kami.</span><span data-en>Nature does not rush, neither do we.</span></p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- NATURE VIDEO -->
+<section id="nature" class="pad" style="scroll-margin-top:84px;background:#26331f;color:#e9eee1;">
+  <div class="wrap" style="text-align:center;">
+    <div class="kicker center" style="margin-bottom:20px;">
+      <span class="line" style="background:rgba(255,255,255,.25);"></span>
+      <span class="t" style="color:var(--sage-3);"><span data-id>Permata Alam Aceh Jaya</span><span data-en>The Natural Gem of Aceh Jaya</span></span>
+      <span class="line" style="background:rgba(255,255,255,.25);"></span>
+    </div>
+    <h2 class="head" style="color:#f1efe6;max-width:760px;margin:0 auto 16px;"><span data-id>Tanah yang Melahirkan Aroma Terbaik.</span><span data-en>The Land Behind the Finest Aroma.</span></h2>
+    <p style="color:#b5c4a8;max-width:600px;margin:0 auto 42px;font-size:15px;"><span data-id>Saksikan keindahan alam Aceh Jaya — hutan tropis, pegunungan, dan pesisir yang menjadi sumber dari setiap tetes minyak nilam kami.</span><span data-en>Witness the natural beauty of Aceh Jaya — the rainforests, mountains, and coast that are the source of every drop of our patchouli oil.</span></p>
+    <div class="video-frame reveal" style="max-width:940px;margin:0 auto;">
+      <iframe src="https://www.youtube-nocookie.com/embed/veoV5tvpBM0?rel=0&modestbranding=1&color=white" title="Permata Alam Aceh Jaya — IndoEssentialOil" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </section>
