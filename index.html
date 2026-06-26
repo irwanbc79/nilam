@@ -178,6 +178,12 @@
   .spec-list .li{display:flex;gap:13px;align-items:flex-start;}
   .spec-list .li .h{font-weight:700;font-size:14px;color:#f1efe6;}
   .spec-note{font-size:12.5px;color:var(--sage-3);margin:22px 0 0;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;}
+  /* full-width horizontal spec band */
+  .spec-wide{max-width:var(--max);margin:42px auto 0;padding:32px 36px;}
+  .spec-list-h{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px 30px;}
+  .spec-list-h .li{display:flex;gap:12px;align-items:center;}
+  .spec-list-h .li .h{font-weight:700;font-size:14.5px;color:#f1efe6;}
+  .spec-wide .spec-note{margin-top:26px;text-align:center;max-width:760px;margin-left:auto;margin-right:auto;}
 
   /* gallery */
   #gallery{background:var(--green-deep);color:#e9eee1;}
@@ -438,17 +444,17 @@
       <div class="art-frame" style="width:100%;aspect-ratio:3/2;">
         <img src="assets/img/product-dropper.jpg" alt="Tetesan minyak nilam murni dari pipet ke botol amber, dikelilingi daun nilam segar" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="1536" height="1024">
       </div>
-      <div class="spec-card">
-        <div class="lbl"><span data-id>Otentik dari Sumbernya</span><span data-en>Authentic from Source</span></div>
-        <div class="spec-list">
-          <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-top:2px;flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Campuran</span><span data-en>No Blending</span></div></div>
-          <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-top:2px;flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Aditif Sintetis</span><span data-en>No Synthetic Additives</span></div></div>
-          <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-top:2px;flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Pewangi Buatan</span><span data-en>No Artificial Fragrance</span></div></div>
-          <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-top:2px;flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Asal-usul Dapat Ditelusuri</span><span data-en>Traceable Origin</span></div></div>
-        </div>
-        <p class="spec-note"><span data-id>Setiap pengiriman dapat ditelusuri hingga ke daerah penghasilnya — memastikan keaslian dari kebun hingga ke tangan Anda.</span><span data-en>Every shipment is traceable to its origin — ensuring authenticity from the farm to your hands.</span></p>
-      </div>
     </div>
+  </div>
+  <div class="spec-card spec-wide reveal">
+    <div class="lbl" style="text-align:center;"><span data-id>Otentik dari Sumbernya</span><span data-en>Authentic from Source</span></div>
+    <div class="spec-list-h">
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Campuran</span><span data-en>No Blending</span></div></div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Aditif Sintetis</span><span data-en>No Synthetic Additives</span></div></div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Tanpa Pewangi Buatan</span><span data-en>No Artificial Fragrance</span></div></div>
+      <div class="li"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:0 0 auto;"><path d="m5 13 4 4L19 7" stroke="#9fb592" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="h"><span data-id>Asal-usul Dapat Ditelusuri</span><span data-en>Traceable Origin</span></div></div>
+    </div>
+    <p class="spec-note"><span data-id>Setiap pengiriman dapat ditelusuri hingga ke daerah penghasilnya — memastikan keaslian dari kebun hingga ke tangan Anda.</span><span data-en>Every shipment is traceable to its origin — ensuring authenticity from the farm to your hands.</span></p>
   </div>
 </section>
 
