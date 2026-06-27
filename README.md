@@ -26,9 +26,11 @@ python3 -m http.server 8080
 
 ## Before going live — checklist
 
-- [ ] **WhatsApp number**: edit `WA_NUMBER` in the `<script>` at the bottom of `index.html` (currently a placeholder `6285000000000`).
+- [ ] **WhatsApp number** (BLOCKER for sales): edit `WA_NUMBER` in the `<script>` at the bottom of `index.html` (currently a placeholder `6285000000000`). Every CTA points here.
 - [ ] **Email**: `info@indoessentialoil.com` — set up the mailbox or change the address.
-- [ ] **Social links**: Instagram href is `#` — add the real profile.
+- [ ] **Social links**: Instagram href is `#` — add the real profile (also add it to JSON-LD `sameAs`).
+- [x] **SEO**: meta robots/geo, full Open Graph + Twitter cards, JSON-LD (@graph: Organization + WebSite + Product), `robots.txt`, `sitemap.xml`.
+- [ ] After deploy: submit `https://indoessentialoil.com/sitemap.xml` in Google Search Console + request indexing.
 - [ ] Optional: replace the SVG landscape / journey / bottle art with real photos when available (slots are in the About, Process, and Product sections).
 
 ## Notes

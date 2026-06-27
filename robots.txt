@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /design-source/
+
+Sitemap: https://indoessentialoil.com/sitemap.xml

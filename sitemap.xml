@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://indoessentialoil.com/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://indoessentialoil.com/assets/img/hero-bottle.jpg</image:loc>
+      <image:title>Premium Patchouli (Nilam) Oil from Aceh Jaya, Indonesia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indoessentialoil.com/assets/img/product-dropper.jpg</image:loc>
+      <image:title>Pure Patchouli Oil — Aceh Jaya</image:title>
+    </image:image>
+  </url>
+</urlset>
