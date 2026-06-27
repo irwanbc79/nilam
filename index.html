@@ -260,7 +260,9 @@
 
   /* why */
   #why{background:var(--green-darker);color:#dfe6d6;}
-  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:34px 28px;}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 40px;max-width:1000px;margin:0 auto;}
+  @media (max-width:760px){ .why-grid{grid-template-columns:1fr 1fr;gap:30px 24px;} }
+  @media (max-width:460px){ .why-grid{grid-template-columns:1fr;} }
   .why-grid .h{font-weight:700;font-size:14.5px;color:#f1efe6;margin:14px 0 6px;}
   .why-grid p{font-size:12.8px;color:#a9bb9c;margin:0;}
 
