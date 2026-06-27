@@ -100,6 +100,22 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the patchouli alcohol content?", "acceptedAnswer": { "@type": "Answer", "text": "Our patchouli oil contains 30% or higher patchouli alcohol (export grade). The exact value of each batch is stated in the Certificate of Analysis (COA) accompanying every shipment." } },
+    { "@type": "Question", "name": "Is the oil 100% pure?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is 100% pure natural essential oil, steam-distilled from selected patchouli leaves, with no blending, diluents, or synthetic fragrance." } },
+    { "@type": "Question", "name": "Do you provide COA, GC-MS, and MSDS?", "acceptedAnswer": { "@type": "Answer", "text": "A COA is included with every shipment. GC-MS reports and an MSDS are available upon request for your registration and quality-control needs." } },
+    { "@type": "Question", "name": "What is the minimum order quantity (MOQ)?", "acceptedAnswer": { "@type": "Answer", "text": "MOQ is flexible based on packaging and destination. Our common export unit is a 180 kg steel drum. Please contact us for current terms suited to your needs." } },
+    { "@type": "Question", "name": "Can I request a sample first?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Samples are available upon request (typically 50 to 100 ml). Sample courier costs are usually covered by the buyer." } },
+    { "@type": "Question", "name": "Which Incoterms and loading port do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve EXW, FOB Belawan, CFR, and CIF to destination ports worldwide. The main loading port is Belawan, Medan." } },
+    { "@type": "Question", "name": "What is the lead time?", "acceptedAnswer": { "@type": "Answer", "text": "Samples are typically ready in 2 to 5 working days. For bulk orders, lead time is confirmed per order based on volume and production schedule." } },
+    { "@type": "Question", "name": "What are the payment terms?", "acceptedAnswer": { "@type": "Answer", "text": "Standard terms are a 30% T/T deposit and 70% before shipment. Other methods such as L/C can be negotiated for ongoing partnerships." } }
+  ]
+}
+</script>
 
 <style>
   :root{
@@ -353,6 +369,27 @@
   .tds-dl{margin-top:14px;display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#3a2f12;font-weight:700;font-size:13px;padding:13px 20px;border-radius:9px;transition:transform .3s,box-shadow .3s;box-shadow:0 14px 28px -14px rgba(184,146,58,.8);}
   .tds-dl:hover{transform:translateY(-2px);}
   @media (max-width:860px){ .tds-grid{grid-template-columns:1fr;} }
+
+  /* ===== FAQ ===== */
+  #faq{background:var(--paper);scroll-margin-top:84px;}
+  .faq-list{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .faq-item{background:var(--cream-2);border:1px solid rgba(47,74,53,.12);border-radius:13px;overflow:hidden;transition:box-shadow .3s,border-color .3s;}
+  .faq-item[open]{box-shadow:0 22px 44px -30px rgba(35,58,41,.55);border-color:rgba(47,74,53,.22);}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 22px;font-weight:700;font-size:15px;color:var(--green-deep);}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .ic{flex:0 0 auto;width:27px;height:27px;border-radius:50%;border:1.5px solid var(--sage-2);display:flex;align-items:center;justify-content:center;color:var(--sage-2);font-size:18px;line-height:1;transition:transform .35s,background .3s,color .3s,border-color .3s;}
+  .faq-item[open] summary .ic{transform:rotate(135deg);background:var(--green);color:#fff;border-color:var(--green);}
+  .faq-item .ans{padding:0 22px 20px;font-size:13.6px;color:var(--text-soft);line-height:1.68;}
+
+  /* ===== mobile sticky CTA bar ===== */
+  .mcta{display:none;}
+  @media (max-width:760px){
+    .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:66;gap:10px;padding:9px 13px calc(9px + env(safe-area-inset-bottom));background:rgba(244,241,233,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(47,74,53,.14);box-shadow:0 -12px 30px -20px rgba(35,58,41,.6);}
+    .mcta a{flex:1;text-align:center;font-weight:700;font-size:14px;padding:13px 8px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:8px;}
+    .mcta .s{background:var(--green);color:#f1efe6;}
+    .mcta .w{background:#25d366;color:#fff;}
+    .fab{bottom:80px;}
+  }
 </style>
 </head>
 <body data-lang="id">
@@ -378,6 +415,7 @@
       <a href="#product"><span data-id>Produk</span><span data-en>Product</span></a>
       <a href="#specs"><span data-id>Spesifikasi</span><span data-en>Specs</span></a>
       <a href="#gallery"><span data-id>Galeri</span><span data-en>Gallery</span></a>
+      <a href="#faq">FAQ</a>
       <a href="#contact"><span data-id>Kontak</span><span data-en>Contact</span></a>
     </nav>
     <div class="hd-actions">
@@ -399,6 +437,7 @@
   <a href="#product"><span data-id>Produk</span><span data-en>Product</span></a>
       <a href="#specs"><span data-id>Spesifikasi</span><span data-en>Specs</span></a>
   <a href="#gallery"><span data-id>Galeri</span><span data-en>Gallery</span></a>
+      <a href="#faq">FAQ</a>
   <a href="#contact"><span data-id>Kontak</span><span data-en>Contact</span></a>
   <a href="#contact" style="color:var(--green);margin-top:10px;border:0;"><span data-id>→ Minta Penawaran</span><span data-en>→ Request a Quote</span></a>
 </nav>
@@ -717,6 +756,53 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" class="pad">
+  <div class="wrap">
+    <div class="tds-head reveal" style="margin-bottom:40px;">
+      <span class="badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 9.3a2.5 2.5 0 0 1 4.6 1.3c0 1.7-2.1 2-2.1 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+        <span data-id>Pertanyaan Umum</span><span data-en>FAQ</span>
+      </span>
+      <h2 class="head serif" style="font-size:clamp(30px,3.6vw,46px);"><span data-id>Pertanyaan yang Sering Diajukan</span><span data-en>Frequently Asked Questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Berapa kadar Patchouli Alcohol-nya?</span><span data-en>What is the patchouli alcohol content?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Minyak nilam kami berkadar Patchouli Alcohol ≥30% (mutu ekspor). Nilai pasti tiap batch tercantum pada Certificate of Analysis (COA) yang menyertai setiap pengiriman.</span><span data-en>Our patchouli oil contains ≥30% patchouli alcohol (export grade). The exact value of each batch is stated in the Certificate of Analysis (COA) accompanying every shipment.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Apakah produknya 100% murni?</span><span data-en>Is the oil 100% pure?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Ya. 100% minyak atsiri murni alami hasil destilasi uap dari daun nilam pilihan — tanpa campuran, pengencer, maupun pewangi sintetis.</span><span data-en>Yes. 100% pure natural essential oil, steam-distilled from selected patchouli leaves — with no blending, diluents, or synthetic fragrance.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Apakah tersedia COA, GC-MS, dan MSDS?</span><span data-en>Do you provide COA, GC-MS, and MSDS?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>COA disertakan pada setiap pengiriman. Laporan GC-MS dan MSDS tersedia atas permintaan untuk kebutuhan registrasi dan kontrol mutu Anda.</span><span data-en>A COA is included with every shipment. GC-MS reports and an MSDS are available upon request for your registration and quality-control needs.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Berapa jumlah minimum order (MOQ)?</span><span data-en>What is the minimum order quantity (MOQ)?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>MOQ fleksibel sesuai kemasan dan tujuan. Satuan ekspor umum kami adalah drum baja 180 kg. Silakan hubungi kami untuk ketentuan terkini sesuai kebutuhan Anda.</span><span data-en>MOQ is flexible based on packaging and destination. Our common export unit is a 180 kg steel drum. Please contact us for current terms suited to your needs.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Bisakah saya minta sample lebih dulu?</span><span data-en>Can I request a sample first?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Tentu. Sample tersedia atas permintaan (umumnya 50–100 ml). Biaya pengiriman sample biasanya ditanggung pembeli.</span><span data-en>Absolutely. Samples are available upon request (typically 50–100 ml). Sample courier costs are usually covered by the buyer.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Incoterm dan pelabuhan muat apa yang dilayani?</span><span data-en>Which Incoterms and loading port do you serve?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Kami melayani EXW, FOB Belawan, CFR, dan CIF ke berbagai pelabuhan tujuan. Pelabuhan muat utama: Belawan, Medan.</span><span data-en>We serve EXW, FOB Belawan, CFR, and CIF to destination ports worldwide. Main loading port: Belawan, Medan.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Berapa lama waktu pengiriman (lead time)?</span><span data-en>What is the lead time?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Sample umumnya siap dalam 2–5 hari kerja. Untuk order bulk, lead time dikonfirmasi per pesanan sesuai volume dan jadwal produksi.</span><span data-en>Samples are typically ready in 2–5 working days. For bulk orders, lead time is confirmed per order based on volume and production schedule.</span></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary><span><span data-id>Bagaimana metode pembayarannya?</span><span data-en>What are the payment terms?</span></span><span class="ic">+</span></summary>
+        <div class="ans"><span data-id>Ketentuan umum: T/T 30% uang muka dan 70% sebelum pengiriman. Metode lain seperti L/C dapat dinegosiasikan untuk kerja sama berkelanjutan.</span><span data-en>Standard terms: 30% T/T deposit and 70% before shipment. Other methods such as L/C can be negotiated for ongoing partnerships.</span></div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="pad" style="scroll-margin-top:84px;padding-top:124px;padding-bottom:128px;">
   <div class="contact-bg" role="img" aria-label="Hutan tropis Aceh Jaya berselimut kabut saat matahari terbit"></div>
@@ -762,6 +848,15 @@
   </div>
 </footer>
 
+<!-- Mobile sticky CTA -->
+<div class="mcta">
+  <a class="s" href="#contact"><span data-id>Minta Sample</span><span data-en>Request Sample</span></a>
+  <a class="w" id="waMcta" href="#" aria-label="WhatsApp">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.3.1.7-.1 1.1Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
 <!-- Floating actions -->
 <div class="fab">
   <a id="waFab" class="wa" href="#" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.3.1.7-.1 1.1Z"/></svg></a>
@@ -782,7 +877,7 @@
   var WA_NUMBER = "6285000000000"; // TODO: ganti dengan nomor WhatsApp resmi
   var WA_TEXT = encodeURIComponent("Halo IndoEssentialOil, saya tertarik dengan produk minyak nilam Aceh Jaya. / Hello, I'm interested in your Aceh Jaya patchouli oil.");
   var waUrl = "https://wa.me/" + WA_NUMBER + "?text=" + WA_TEXT;
-  ["waBtn","waFab","waFoot"].forEach(function(id){ var el=document.getElementById(id); if(el) el.href=waUrl; });
+  ["waBtn","waFab","waFoot","waMcta"].forEach(function(id){ var el=document.getElementById(id); if(el) el.href=waUrl; });
 
   // ===== Language =====
   var saved = null;
